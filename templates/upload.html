@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Images</title>
+</head>
+<body>
+    <h2>Upload Model and Clothes Images</h2>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="model_image">Model Image:</label>
+        <input type="file" name="model_image" required><br><br>
+        <label for="clothes_image">Clothes Image:</label>
+        <input type="file" name="clothes_image" required><br><br>
+        <label for="garment_type">Select Garment Type:</label>
+        <select name="garment_type" id="garment_type" required>
+            <option value="upper_body">Upper Body</option>
+            <option value="lower_body">Lower Body</option>
+        </select><br><br>
+        <input type="submit" value="Upload Images">
+    </form>
+</body>
+</html>
